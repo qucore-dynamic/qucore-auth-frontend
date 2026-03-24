@@ -21,8 +21,8 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/qucore-ath.git
-cd qucore-ath
+git clone https://github.com/your-username/qucore-auth-frontend.git
+cd qucore-auth-frontend
 ```
 
 ```bash
