@@ -22,10 +22,9 @@
 ```bash
 # Clone repository
 git clone https://github.com/your-username/qucore-ath.git
-cd qucore-ath/client
-# Or
-cd qucore-ath/server
+cd qucore-ath
 ```
+
 ```bash
 # Install dependencies
 npm install
@@ -33,9 +32,6 @@ npm install
 # Set up environment
 cp .env.example .env
 # Edit .env with your database credentials
-
-# Run database migrations
-npx prisma migrate dev --name init
 
 # Start development server
 npm run dev

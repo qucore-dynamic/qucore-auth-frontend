@@ -6,4 +6,4 @@ services:
     env_file:
       - .env
     ports:
-      - '${PORT}:3020'
+      - '3020:3020'
