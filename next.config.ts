@@ -15,15 +15,6 @@ const nextConfig: NextConfig = {
     externalDir: true,
   },
 
-  async rewrites() {
-    return [
-      {
-        source: '/api/auth/:path*',
-					destination: `${AUTH_URL}/:path*`,
-      },
-    ]
-  },
-
   images: {
     remotePatterns: [
       {
@@ -42,7 +33,7 @@ const nextConfig: NextConfig = {
         {
           key: 'Content-Security-Policy',
           value:
-            'frame-src \'self\' https://www.google.com; script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https://www.google.com https://www.gstatic.com; connect-src \'self\';',
+            "frame-src 'self' https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com https://www.gstatic.com; connect-src 'self';",
         },
       ],
     },
