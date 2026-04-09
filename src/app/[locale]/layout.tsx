@@ -29,9 +29,7 @@ const RootLayout = async ({ children, params }: LocalesLayoutT) => {
       <body
         className={`${prosto.className} flex flex-col justify-center w-full px-[2.5%] h-screen bg-(--bg) text-(--txt)`}
       >
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   )
