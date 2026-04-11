@@ -1,5 +1,5 @@
 const baseUrl =
-  process.env.MODE === 'prod' ? `https://${process.env.SITE}` : 'http://localhost:3020'
+  process.env.MODE === 'prod' ? `https://${process.env.NEXT_PUBLIC_SITE}` : 'http://localhost:3020'
 
 const title = 'QuCore Auth'
 const description =
